@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: content-box;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+body {
+  background-color: #1f1f1f;
+}
+/*настройка хеддера*/
+.header {
+  background-color: #ff8562;
+}
+.head_container {
+  height: 95px;
+  width: 100%;
+  max-width: 1864px;
+  display: table;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+}
+/*настройка menu*/
+/*настройка logo*/
+.logo_container {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 223px;
+  padding-left: 40px;
+}
+.logo {
+  display: inline-block;
+  color: #fff;
+}
+.logo_svg {
+  max-width: 140px;
+  width: 140px;
+  min-width: 140px;
+  height: auto;
+  display: block;
+  margin-right: 30px;
+}
+/*настройка menu element*/
+.menu_container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+}
+.menu_ul {
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+}
+.menu_element {
+  clear: both;
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  color: #000;
+}
+.a_menu {
+  font-weight: 600;
+  color: #000;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.a_menu:hover {
+  color: #ff8562;
+}
+.menu_1 {
+  padding: 0 15px 0 0;
+}
+.menu_2 {
+  padding: 0 15px;
+}
+.menu_3 {
+  padding: 0 0 0 15px;
+}
+
+/*настройка info*/
+.info_container {
+  min-width: 223px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 40px;
+}
+.info_text {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 30px;
+  display: table-cell;
+  white-space: nowrap;
+}
+.menu_info {
+  line-height: 24px;
+}
+.menu_location {
+  font-size: 14px;
+}
+
+/*приветствующаю страница*/
+
+.welcome {
+  background-image: url(/img/walcome_img.jpg);
+  height: 801px;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+.welcome_filter {
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.5)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 801px;
+}
+.welcome_text {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 310px;
+  height: 1vh;
+  width: 100%;
+}
+
+.coffee_name {
+  padding: 0 0 38px 0;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 72px;
+  line-height: 1.17;
+  font-weight: 600;
+}
+.coffee_loz {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/*Настройка контейнера с кофе*/
+
+.coffee_container {
+  padding: 150px 0 90px 0;
+  background-color: #f5f5f5;
+}
+.coffee_text {
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+
+  padding-left: 100px;
+}
+.coffee_lable {
+  font-size: 56px;
+  line-height: 1.23;
+  font-weight: 600;
+  text-align: center;
+}
+.text_sell {
+  height: 112px;
+}
+.coffee_lable_text {
+  padding-top: 41px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.45;
+  text-align: center;
+}
+.coffee_need_con_1 {
+  text-align: center;
+  margin-left: 332px;
+  margin-right: 332px;
+  max-width: 100%;
+}
+.coffee_grid_container {
+  width: 100%;
+  height: 1276px;
+  padding-bottom: 150px;
+  background-color: #f5f5f5;
+}
+.grid_coffee {
+  margin: 0 100px;
+  display: table;
+}
+.elem_sell {
+  text-align: center;
+  max-width: 360px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.sell_img {
+  width: 360px;
+  height: 400px;
+}
+.sell_name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+}
+.sell_descr {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-top: 12px;
+}
+.buy {
+  margin-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buy_btn {
+  color: #fff;
+  background-color: #ff6047;
+  border-radius: 5px;
+  height: 45px;
+  width: 132px;
+  font-size: 14px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+}
+.buy_btn:hover {
+  background-color: rgba(235, 75, 45, 1);
+}
+.buy_text {
+  padding-top: 12px;
+}
+
+.bf_container {
+  padding: 150px 0 90px 0;
+  background-color: #fff;
+}
+.bf_text_cont {
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+
+  padding-left: 100px;
+}
+.bf_main_text {
+  font-size: 56px;
+  line-height: 1.23;
+  font-weight: 600;
+  text-align: center;
+}
+.bf_desc_text_cont {
+  padding-top: 41px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.45;
+  text-align: center;
+}
+.bf_need_con {
+  text-align: center;
+  margin-left: 332px;
+  margin-right: 332px;
+  max-width: 100%;
+}
+
+.bf_grid_container {
+  width: 100%;
+  height: 626px;
+  padding-bottom: 150px;
+  background-color: #fff;
+}
+.grid_bf {
+  margin: 0 auto;
+  display: table;
+}
+.bf_elem_sell {
+  text-align: center;
+  max-width: 360px;
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+}
+.bf_sell_img {
+  width: 360px;
+  height: 400px;
+}
+.bf_sell_name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+}
+.bf_sell_descr {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.bf_price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-top: 12px;
+}
+
+.disc_container {
+  padding-top: 150px;
+  background-color: #f5f5f5;
+}
+.disc_text_cont {
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+
+  padding-left: 100px;
+}
+.disc_main_text {
+  font-size: 56px;
+  line-height: 1.23;
+  font-weight: 600;
+  text-align: center;
+}
+.disc_desc_text_cont {
+  padding-top: 41px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.45;
+  text-align: center;
+}
+.disc_need_con {
+  text-align: center;
+  margin-left: 332px;
+  margin-right: 332px;
+}
+
+.discount_container {
+  padding: 135px 0;
+  height: 350px;
+  background-color: #fff;
+}
+.discount_margin_container {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+.left_cont_cont {
+  text-align: left;
+  display: inline;
+  float: left;
+  margin: auto 20px;
+  max-width: 560px;
+}
+.text_cont {
+  padding-right: 20px;
+}
+.discount_main_text {
+  padding-bottom: 28px;
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: 600;
+}
+.discount_desc_text {
+  opacity: 0.85;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.right_cont_cont {
+  text-align: left;
+  display: inline;
+  float: left;
+  margin: 0 20px;
+  width: 560px;
+}
+.discount_image {
+  float: right;
+  width: 560px;
+  height: 350px;
+}
+
+.cont_container {
+  padding-top: 150px;
+  background-color: #1f1f1f;
+  height: 225px;
+}
+.cont_margin_cont {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.cont_text_cont {
+  padding-left: 300px;
+  max-width: 560px;
+  display: inline;
+  float: left;
+  margin: 0 20px 0 20px;
+  width: 100%;
+  text-align: center;
+}
+.cont_main_text {
+  color: #fff;
+  font-size: 56px;
+  padding: 8px 0 3px 0;
+  line-height: 1.23;
+  font-weight: 600;
+  text-align: center;
+}
+.cont_descr_text {
+  color: #fff;
+  font-size: 24px;
+  padding-top: 41px;
+  line-height: 1.45;
+  font-weight: 300;
+  text-align: center;
+}
+
+.cont_info_cont {
+  background-color: #1f1f1f;
+  height: 295px;
+}
+.cont_info_wrap {
+}
+.cont_elem_cont {
+  margin: 105px auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.cont_elem {
+  vertical-align: top;
+  position: relative;
+  height: auto;
+  max-width: 360px;
+  display: inline;
+  float: left;
+  margin: 0 20px;
+  width: 100%;
+}
+.elem_wrap {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 25px;
+}
+.cont_img {
+  width: 60px;
+  margin-bottom: 30px;
+  height: auto;
+  max-width: 100%;
+}
+.cont_elem_text {
+}
+.cont_main_info_text {
+  color: #fff;
+  font-size: 24px;
+  padding-bottom: 20px;
+  line-height: 1.35;
+  font-weight: 600;
+  text-align: center;
+}
+.cont_other_info_text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+
+.footer{
+    height: 155px;
+    background-color: #1f1f1f;
+}
+.footer_text_container{
+    padding-top: 65px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 300;
+}
