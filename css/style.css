@@ -104,7 +104,7 @@ body {
 /*приветствующаю страница*/
 
 .welcome {
-  background-image: url(/img/walcome_img.jpg);
+  background-image: url(./img/walcome_img.jpg);
   height: 801px;
   background-attachment: scroll;
   background-position: center top;
